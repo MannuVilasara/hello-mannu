@@ -1,0 +1,22 @@
+{
+  "name": "hello-mannu",
+  "version": "1.0.0",
+  "description": "A CLI tool to display information about Manu",
+  "main": "index.js",
+  "bin": {
+    "hello-mannu": "bin/hello-mannu.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MannuVilasara/hello-mannu.git"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "boxen": "^5.1.2"
+  }
+}
