@@ -1,7 +1,7 @@
 {
   "name": "hello-mannu",
   "version": "1.0.0",
-  "description": "A CLI tool to display information about Manu",
+  "description": "A CLI tool to display information about Mannu",
   "main": "index.js",
   "bin": {
     "hello-mannu": "bin/hello-mannu.js"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Manu",
+  "author": "MannuVilasara",
   "license": "ISC",
   "repository": {
     "type": "git",
