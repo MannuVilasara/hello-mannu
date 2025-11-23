@@ -22,6 +22,10 @@ hello-mannu
 
 This will display a colorful introduction with ASCII art and contact links.
 
+### Options
+
+- `--gh`: Display system information in a fun ASCII art format from github
+
 ## Publishing
 
 This project uses GitHub Actions to automatically publish to NPM on new releases.
