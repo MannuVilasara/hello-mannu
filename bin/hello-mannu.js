@@ -11,7 +11,7 @@ if (isGh) {
   // Show system info ASCII art
   console.log(
     boxen(
-      chalk.cyanBright(`
+      chalk.white(`
 mannu@archbtw:~$ gitfetch
 
                    .~vVeZNgQBBBQQg9Ze1v~.
@@ -46,8 +46,8 @@ W@@@@@@@@@@Q\`                                  _0@@@@@@@@@@*
         borderStyle: "double",
         borderColor: "cyan",
         dimBorder: false,
-      }
-    )
+      },
+    ),
   );
   process.exit(0);
 }
@@ -59,7 +59,7 @@ ${chalk.bold.yellow("👋 Hello! I am Mannu.")}
 ${chalk.green("💻 Passionate Developer")}
 ${chalk.blue("🚀 Loves building stuff and exploring new technologies")}
 ${chalk.magenta(
-  "❤️ Find me on GitHub or connect on discord for collaborations!"
+  "❤️ Find me on GitHub or connect on discord for collaborations!",
 )}
 
 ${chalk.cyan("🔗 GitHub: https://github.com/MannuVilasara")}
@@ -77,5 +77,5 @@ console.log(
     borderColor: "cyan",
     // backgroundColor: "#000000",
     dimBorder: false,
-  })
+  }),
 );
