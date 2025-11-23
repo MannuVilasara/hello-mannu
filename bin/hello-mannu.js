@@ -59,14 +59,14 @@ ${chalk.bold.yellow("👋 Hello! I am Mannu.")}
 ${chalk.green("💻 Passionate Developer")}
 ${chalk.blue("🚀 Loves building stuff and exploring new technologies")}
 ${chalk.magenta(
-  "🌐 Find me on GitHub or connect on discord for collaborations!"
+  "❤️ Find me on GitHub or connect on discord for collaborations!"
 )}
 
 ${chalk.cyan("🔗 GitHub: https://github.com/MannuVilasara")}
 ${chalk.cyan("🌐 Portfolio: https://mannu.live")}
 ${chalk.cyan("📧 Email: mannuvilasara@gmail.com")}
 
-${chalk.red("✨ Thanks for checking out my CLI tool!")}
+${chalk.red("✨ Also try `npx hello-mannu --gh`")}
 `;
 
 console.log(
