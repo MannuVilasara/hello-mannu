@@ -45,10 +45,10 @@ a@@@@@@@@@@2                                    v@@@@@@@@@@;   ${chalk.bold.gree
     )} 
 @@@@@@@@@@@.                                     @@@@@@@@@@%   ${chalk.cyan(
       "▓▓▓▓▓▓▓▓▓░",
-    )} ${chalk.white("JavaScript/TypeScript/Pytho")}
+    )} ${chalk.white("JS/TS/Python")} ${chalk.blue("")}  
 #@@@@@@@@@@r                                    :@@@@@@@@@@s   ${chalk.green(
       "▓▓▓▓▓▓▓▓░░",
-    )} ${chalk.white("Node.js/Express/NestJS")} ${chalk.green("🟢")}
+    )} ${chalk.white("Node.js/Express/Next.js")} ${chalk.cyan("")}
 W@@@@@@@@@@Q\`                                  _0@@@@@@@@@@*   ${chalk.red(
       "▓▓▓▓▓▓▓▓▓░",
     )} ${chalk.white("MongoDB/PostgreSQL/Redis")} ${chalk.green("🍃")}
