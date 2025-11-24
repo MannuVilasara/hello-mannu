@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const chalk = require("chalk");
-const boxen = require("boxen");
+import chalk from "chalk";
+import boxen from "boxen";
 
 // Check for --fetch flag
 const args = process.argv.slice(2);
@@ -10,44 +10,71 @@ const isGh = args.includes("--gh");
 if (isGh) {
   // Show system info ASCII art
   console.log(
-    boxen(
-      chalk.white(`
-mannu@archbtw:~$ gitfetch
-
+    chalk.cyan(`
                    .~vVeZNgQBBBQQg9Ze1v~.
-              \`^}%B@@@@@@@@@@@@@@@@@@@@@@8%}= \`                 mannu@archbtw
-           -Lq#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#qr-              -----------------------
-        .V0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0?.           OS: GNU/Linux
-      _l#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#l\`         Uptime: 18 years
-    \`o@@@@@@@@v^r}P0@@@@@@@@@@@@@@@@@@@@ghlr<r@@@@@@@#o\`       Packages: 1030 (pacman)
-   ;0@@@@@@@@0      .?szL?*;!!!!~*|]Vox_      P@@@@@@@@0.      Shell: /bin/zsh
-  ?@@@@@@@@@@q                                z@@@@@@@@@#?     Editors: vim, vscode
- :@@@@@@@@@@@Q                                R@@@@@@@@@@@"    Home: git@github.com:MannuVilasara
+              \`^}%B@@@@@@@@@@@@@@@@@@@@@@8%}= \`                ${chalk.bold.cyan(
+                "mannu@archlinux",
+              )}
+           -Lq#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#qr-              ${chalk.gray(
+             "─────────────────────────────────",
+           )}
+        .V0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0?.           ${chalk.yellow(
+          "󰣇 OS:",
+        )}       ${chalk.white("Arch Linux x86_64")} ${chalk.cyan("🐧")}
+      _l#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#l\`         ${chalk.yellow(
+        "󱎫 Uptime:",
+      )}   ${chalk.magenta("18 Years")} ${chalk.red("🚗💨")}
+    \`o@@@@@@@@v^r}P0@@@@@@@@@@@@@@@@@@@@ghlr<r@@@@@@@#o\`       ${chalk.yellow(
+      " Packages:",
+    )} ${chalk.white("1549 (pacman), 69 (pnpm)")}
+   ;0@@@@@@@@0      .?szL?*;!!!!~*|]Vox_      P@@@@@@@@0.      ${chalk.yellow(
+     " Shell:",
+   )}    ${chalk.white("/bin/fish")} ${chalk.cyan("🐚")}
+  ?@@@@@@@@@@q                                z@@@@@@@@@#?     ${chalk.yellow(
+    " Editors:",
+  )}  ${chalk.white("nvim, vscode")} ${chalk.green("⚡")}
+ :@@@@@@@@@@@Q                                R@@@@@@@@@@@"    ${chalk.yellow(
+   " Theme:",
+ )}    ${chalk.white("Catppuccin")} ${chalk.magenta("✨")}
 _g@@@@@@@@@@2-                                \`M@@@@@@@@@@0
-a@@@@@@@@@@2                                    v@@@@@@@@@@;   contact information
-#@@@@@@@@@@_                                     @@@@@@@@@@y   -------------------
-@@@@@@@@@@@.                                     @@@@@@@@@@%   Website:mannu.live
-#@@@@@@@@@@r                                    :@@@@@@@@@@s   Github: MannuVilasara
-W@@@@@@@@@@Q\`                                  _0@@@@@@@@@@*
-~#@@@@@@@@@@9!                                ,Q@@@@@@@@@@#    device specifications
- ;@@@@@@@@@@@@6^.                          \`\\p@@@@@@@@@@@@~    ---------------------
-  n@@@@@PlVd@@@@#6Vv~_\`              \`_!?zd#@@@@@@@@@@@@#n     CPU: Normal Human Brain
-   2#@@@#hr _Y#@@@@@@@#q\`          \`X#@@@@@@@@@@@@@@@@@#~
-    .d@@@@@D\` .n6#@@@#V\`             Q@@@@@@@@@@@@@@@@d.
-      x0@@@@0^   \`__\`-                M@@@@@@@@@@@@@@0=
-        =p#@@@#%Il]]L1,              M@@@@@@@@@@@#V=
+a@@@@@@@@@@2                                    v@@@@@@@@@@;   ${chalk.bold.green(
+      "⚙️  tech stack",
+    )}
+#@@@@@@@@@@_                                     @@@@@@@@@@y   ${chalk.gray(
+      "─────────────────────────────────",
+    )} 
+@@@@@@@@@@@.                                     @@@@@@@@@@%   ${chalk.cyan(
+      "▓▓▓▓▓▓▓▓▓░",
+    )} ${chalk.white("JavaScript/TypeScript/Pytho")}
+#@@@@@@@@@@r                                    :@@@@@@@@@@s   ${chalk.green(
+      "▓▓▓▓▓▓▓▓░░",
+    )} ${chalk.white("Node.js/Express/NestJS")} ${chalk.green("🟢")}
+W@@@@@@@@@@Q\`                                  _0@@@@@@@@@@*   ${chalk.red(
+      "▓▓▓▓▓▓▓▓▓░",
+    )} ${chalk.white("MongoDB/PostgreSQL/Redis")} ${chalk.green("🍃")}
+~#@@@@@@@@@@9!                                ,Q@@@@@@@@@@#    ${chalk.magenta(
+      "▓▓▓▓▓▓▓░░░",
+    )} ${chalk.white("Docker/Kubernetes/AWS/GCP")} ${chalk.blue("🐳")}
+ ;@@@@@@@@@@@@6^.                          \`\\p@@@@@@@@@@@@~    
+  n@@@@@PlVd@@@@#6Vv~_\`              \`_!?zd#@@@@@@@@@@@@#n     ${chalk.bold.magenta(
+    "🔗 contact & links",
+  )}
+   2#@@@#hr _Y#@@@@@@@#q\`          \`X#@@@@@@@@@@@@@@@@@#~     ${chalk.gray(
+     " ─────────────────────────────────",
+   )}
+    .d@@@@@D\` .n6#@@@#V\`             Q@@@@@@@@@@@@@@@@d.      ${chalk.blue(
+      "  GitHub:",
+    )}    ${chalk.cyan("https://github.com/MannuVilasara")}
+      x0@@@@0^   \`__\`-                M@@@@@@@@@@@@@@0=       ${chalk.green(
+        "  Portfolio:",
+      )} ${chalk.cyan("https://mannu.live")}
+        =p#@@@#%Il]]L1,              M@@@@@@@@@@@#V=          ${chalk.red(
+          " 󰇮 Email:",
+        )}     ${chalk.cyan("mannuvilasara@gmail.com")}
           \`vR#@@@@@@@@?              M@@@@@@@@#Pv\`
               "Lf8@@@@v              q@@@#Qa?:
                   -!v|\`              _?v!\`
                   `),
-      {
-        padding: 1,
-        margin: 1,
-        borderStyle: "double",
-        borderColor: "cyan",
-        dimBorder: false,
-      },
-    ),
   );
   process.exit(0);
 }

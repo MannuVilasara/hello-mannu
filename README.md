@@ -2,29 +2,17 @@
 
 A beautiful CLI tool to introduce Manu.
 
-## Installation
-
-```bash
-npm install -g hello-mannu
-```
-
-Or run locally:
+## RUN
 
 ```bash
 npx hello-mannu
-```
-
-## Usage
-
-```bash
-hello-mannu
 ```
 
 This will display a colorful introduction with ASCII art and contact links.
 
 ### Options
 
-- `--gh`: Display system information in a fun ASCII art format from github
+- `--gh`: Display system information in a beautiful ASCII art format with tech stack and contact links
 
 ## Publishing
 
