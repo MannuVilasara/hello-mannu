@@ -1,6 +1,6 @@
 # hello-mannu
 
-A beautiful CLI tool to introduce Manu.
+A beautiful CLI tool to introduce Mannu.
 
 ## RUN
 
